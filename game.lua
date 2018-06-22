@@ -182,8 +182,14 @@ local function restoreShip()
 end
 
 
+--composer.setVariable()- Устанавливает переменную, объявленную в одной сцене, доступной во всем приложении, структурированном композитором .
+--composer.getVariable()- Позволяет получить значение любой переменной, установленной ранее composer.setVariable().
+
+
 local function endGame()
-	composer.gotoScene( "menu", { time=800, effect="crossFade" } )
+	composer.setVariable("finalScore", score);
+	composer.gotoScene("highscore", {time = 800, effect= "croosFade"})
+	--highscore.lua
 end
 
 
