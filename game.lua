@@ -11,7 +11,7 @@ local scene = composer.newScene()
 local physics = require( "physics" )
 physics.start()
 physics.setGravity( 0, 0 )
-
+-- Проверка Гита...
 -- Configure image sheet
 local sheetOptions =
 {
