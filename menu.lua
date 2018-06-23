@@ -13,7 +13,7 @@ local function gotoGame()
     composer.gotoScene("game",{time = 800, effect = "crossFade"})
 end
 
-local function gotoHighScore()
+local function gotoHighScores()
 	composer.gotoScene("highscores", {time = 800, effect = "crossFade"})
 end
 
@@ -45,7 +45,7 @@ function scene:create( event )
     highScoresButton:setFillColor(0.75, 0.78, 1);
 
         playButton:addEventListener("tap",gotoGame);
-        highScoresButton:addEventListener("tap", gotoHighScore);
+        highScoresButton:addEventListener("tap", gotoHighScores);
 end
 
 

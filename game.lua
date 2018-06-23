@@ -167,7 +167,6 @@ end
 
 
 local function restoreShip()
-
 	ship.isBodyActive = false
 	ship.x = display.contentCenterX
 	ship.y = display.contentHeight - 100
@@ -188,7 +187,7 @@ end
 
 local function endGame()
 	composer.setVariable("finalScore", score);
-	composer.gotoScene("highscore", {time = 800, effect= "croosFade"})
+	composer.gotoScene("highscores", {time = 800, effect= "crossFade"})
 	--highscore.lua
 end
 
